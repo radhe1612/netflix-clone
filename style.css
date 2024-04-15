@@ -1,0 +1,396 @@
+/* importing  the custom module from the browser */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* importing  the custom module from the browser */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* This is css reset */
+*{
+    padding: 0px;
+    margin: 0px;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+/* appling css to the main div or can say that disigning the main section of our web page */
+.main{
+    background-image: url(assests/images/bg1.jpg);
+    background-position: center center;
+    background-size: max(1500px,100vw);
+    background-repeat: no-repeat;
+    height: 90vh;
+    /* position: relative; */
+    /* top: 0px; */
+}
+
+/* This css will give styling to our main section of the page  */
+.main .box{
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    opacity: .69;
+    position: absolute;
+    top: 0px;
+}
+
+
+/* Applying css to our navbar which is already into our main section of the page  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    height: 80px;
+}
+@media screen and (max-width: 480px) {
+    nav{
+        max-width: 95vw;
+    }
+}
+nav img{
+    width: 145px;
+    position: relative;
+    z-index: 10;
+}
+
+@media screen and (max-width: 410px){
+    nav img{
+        width: 110px;;
+    }
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+
+
+/* Here we are applying css to the remaining content of the main section like , written content emain id column, and get started button */
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    /* This will autometically calulate the length for the remaining content  */
+    height: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    gap: 25px;
+    padding: 0px 23px;
+}
+
+.hero> :nth-child(1){
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* This will create sepration for our web page */
+.separation{
+    height: 9px;
+    background-color: rgb(47, 46, 46);
+}
+
+
+
+/* Now here we are going to design all buttons which are going to use into all over the webpage */
+
+
+/* This css will design the languge button and some proparty will apply to the other buttons  */
+.btn{
+    padding: 6px 8px;
+    background-color: rgba(243, 243, 243, 0);
+    border: 1px solid rgba(253, 246, 246, 0.7);
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+@media screen and (max-width: 590px) {
+    .hero> :nth-child(1){
+        font-size: 25px;
+    }
+    
+    .hero> :nth-child(2){
+        font-size: 20px;
+    }
+    
+    .hero> :nth-child(3){
+        font-size: 17px;
+    }
+
+    .btn{
+        margin: 0px;
+        padding: 6px 1px;
+    }
+
+    .main input{
+        padding: 13px 100px 16px 8px;
+    }
+}
+
+/* Applying css to our language changing button by targeting the id lang*/
+#lang {
+    color: white;
+    background-color: rgba(243, 243, 243, 0);
+    border: none;
+    outline: none;
+}
+
+#lang option{
+    color: black;
+    background-color: white;
+}
+
+.btn svg{
+    filter: invert(1);
+    height: 45px;
+    width: 45px;
+    margin: -17px -3px;
+}
+
+
+/* Applying css to the get started button  */
+.btn-red{
+    background-color: rgb(194, 14, 14);
+    color: white;
+    padding: 10px 36px;
+    font-size: 22px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Now here we going to apply css to our sign in button */
+.btn-red-sm{
+    background-color: rgb(194, 14, 14);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 13px;
+    font-size: 15px;
+}
+
+/* here by applying this css we encapsulate the email coulmn and get started button together */
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media screen and (max-width: 640px) {
+    .hero-btn{
+        flex-wrap: wrap;
+    }
+}
+
+/* here we are applying css to email address column */
+.main input{
+    padding: 13px 190px 16px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid rgba(253, 246, 246, 0.7);
+    background-color: rgba(23, 23, 23, .5);
+}
+
+
+
+/* Now here we are applying css to our first section of the web page */
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .first{
+        flex-wrap: wrap;
+    }
+
+    .secImg img{
+        width: 30vw;
+        position: relative;
+        
+    }
+
+    .secImg video{
+        position: absolute;
+        width: 30vw;
+        top: 71px;
+        right: 44px;
+    }
+}
+
+.secImg{
+    position: relative;
+    
+}
+
+.secImg img{
+    width: 40vw;
+    position: relative;
+    z-index: 10;
+    padding-top: 15px;
+}
+
+.secImg video{
+    position: absolute;
+    top: 81px;
+    right: 54px;
+}
+
+
+/* here we are applying css to font of the all section  */
+.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 590px) {
+    .first > div :nth-child(1){
+        font-size: 25px;
+    }
+}
+
+.first > div :nth-child(3){
+    font-size: 22px;
+}
+
+.third .secImg video{
+    position: absolute;
+    top: 56px;
+    right: 106px;
+    width: 410px;
+}
+
+
+/* here we are applying css to the Frequently asked question section  */
+.faq{
+    color: white;
+    background-color: black;
+    padding: 34px;
+}
+
+.faq h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox{
+    transition: all 1s ease-out;
+    display: flex;
+    background-color:#2d2d2d;
+    padding: 24px ;
+    margin: 12px auto;
+    max-width: 70vw;
+    justify-content: space-between;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+
+.faqbox svg{
+    width: 35px;
+}
+
+
+/* here we are applying css to the email address column of the FAQ section */
+.email input{
+    padding: 13px 190px 16px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: rgb(242, 222, 222);
+    border: 1px solid rgba(253, 246, 246, 0.7);
+    background-color: rgba(23, 23, 23, .5);
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    gap: 18px;
+    padding: 61px 23px;
+}
+.email span{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+
+/* from here we are applying css to our footer section of the web page */
+footer{
+    color: white;
+    max-width: 70vw;
+    margin: 70px auto;
+}
+
+footer span a{
+    color: rgba(255, 255, 255, 0.704);
+}
+
+.footer-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 21px 0px;
+}
+@media only screen and (max-width:1100px){
+    .footer-items{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+.footer-items a{
+    color:  rgba(255, 255, 255, 0.704);
+}
+
+footer span{
+    max-width: 70vw;
+    color: rgba(255, 255, 255, 0.704);
+    /* margin-left: 0px; */
+}
+
+.footerbtn .btn{
+    max-width: 70vw;
+    margin-left: 0px;
+    outline: none;
+}
+
+
